@@ -13,7 +13,6 @@ const header = document.querySelector('header');
 
 button.addEventListener("click", function () {
     menu.classList.toggle('open');
-    console.log(menu);
     if (button.innerHTML === '☰') {
         button.textContent = '❌';
         header.style.height = '300px';
