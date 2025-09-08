@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: black;
+    --secondary-color: #28536b;
+    --accent1-color: #c2948a;
+    --accent2-color: #7ea8be;
+    --accent3-color: #f6f0ed;
+    --accent4-color: #bbb193;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+
+}
+
+header {
+    padding: 10px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--accent3-color);
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#menu {
+    display: none;
+    flex-direction: column;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+#menu.open {
+
+    position: relative;
+    display: flex;
+    height: 200px;
+    margin-bottom: 50px;
+    /*top: 125px;*/
+}
+
+#menu-button {
+    display: block;
+    height: 50px;
+    margin-top: 18px;
+}
+
+header nav a {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--accent4-color);
+    color: var(--primary-color);
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: blue;
+}
+
+#page-title {
+    font-size: 2rem;
+    padding: 30px;
+    min-width: 20px;
+    text-align: center;
+    margin-right: 50px;
+
+}
+
+
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    padding: 2px;
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-color);
+    background-color: var(--accent3-color);
+    /*max-width: 800px;*/
+    margin: 0 auto;
+    text-align-last: center;
+
+}
+
+p {
+    padding: 20px;
+}
+
+.left-card {
+    border: 1px solid;
+    border-color: var(--accent4-color);
+    margin: 5px 25px 5px 25px;
+}
+
+.rigth-card {
+    border: 1px solid;
+    border-color: var(--accent4-color);
+    margin: 5px 25px 5px 25px;
+}
+
+.bottom-card {
+    border: 1px solid;
+    border-color: var(--accent4-color);
+    margin: 5px 25px 5px 25px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#certificate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#wdd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#certificate a,
+#wdd a {
+
+    height: 50px;
+    padding: 15px;
+    margin: 2px;
+    text-align: center;
+    text-justify: center;
+    border: 1px solid;
+    border-color: var(--accent4-color);
+    margin: 5px 25px 5px 25px;
+}
+
+#certificate a {
+    width: 30%;
+}
+
+#wdd a {
+    width: 90%;
+}
+
+footer {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px;
+}

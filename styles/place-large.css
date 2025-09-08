@@ -1,0 +1,61 @@
+@media screen and (min-width:550px) {
+    body {
+        min-width: 800px;
+    }
+
+    main {
+        max-width: none;
+        position: relative;
+    }
+
+    :root {
+        --primary-color: #000000;
+        --secondary-color: white;
+        --accent1-color: #053b06;
+        --accent2-color: #0b5d1e;
+        --accent3-color: #0dab76;
+    }
+
+    .hero img {
+        min-height: 450px;
+    }
+
+    .data {
+        position: absolute;
+        margin-top: 200px;
+        width: 400px;
+        height: 300px;
+        min-width: 250px;
+    }
+
+    .weather {
+        position: absolute;
+        margin-top: 45%;
+        margin-left: 60%;
+        width: 30%;
+        min-width: 200px;
+        height: 200px;
+
+    }
+
+    .data,
+    .weather {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+
+    .data p,
+    .weather p {
+        color: var(--secondary-color);
+    }
+
+    #iconWeather {
+        display: none;
+    }
+
+    #emoticon::after {
+        content: " ⛅";
+    }
+
+
+}

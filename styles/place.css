@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: white;
+    --accent1-color: #053b06;
+    --accent2-color: #0b5d1e;
+    --accent3-color: #0dab76;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    color: var(--secondary-color);
+    font-size: 55px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    font-family: Lato, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.data,
+.weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin-left: 5%;
+    background-color: var(--secondary-color);
+    border: 2px solid #0dab76;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.titlesData,
+.titlesWeather {
+    text-align: right;
+    color: var(--accent1-color);
+}
+
+.boliviaData,
+.boliviaWeather {
+    color: var(--primary-color);
+
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+#iconWeather {
+    grid-column: 1/3;
+
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--accent3-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    height: 100px;
+    padding: 10px;
+}
