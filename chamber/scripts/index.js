@@ -9,6 +9,7 @@ document.getElementById("lastModified").textContent = date;
 const button = document.getElementById('menu-button');
 const menu = document.getElementById('menu');
 const header = document.querySelector('header');
+const listPhotos = document.getElementById('listPhotos');
 
 
 button.addEventListener("click", function () {
@@ -25,7 +26,25 @@ button.addEventListener("click", function () {
     }
 
 });
-const oldLink = document.getElementById('old');
+const fetchData = async () => {
+    listPhotos.innerHTML = '';
+    try {
+        const response = await fetch("https://raw.githubusercontent.com/jazminruiz16/wdd231/main/chamber/members.json"); // Wait for the fetch to complete 
+        const data = await response.json(); // Wait for the response to be converted to JSON
+        // Output the fetched data
+        data.industries.forEach(industries => {
+            const listItem = document.createElement("figure");
+            listItem.innerHTML = '<figcaption><span class="titlePhoto">' + industries.name + '</span><br>Adress: ' + industries.adress + '<br>Phone number: ' + industries.phonenumber + '<br>Membership level: ' + industries.membershiplevel + '<br>Information: ' + industries.information + ' </figcaption><img src="' + industries.imageurl + '" alt="' + industries.name + '" loading="lazy">';
+            listPhotos.appendChild(listItem);
+        });
+
+    } catch (error) {
+        console.error("Error fetching data:", error); // Handle any errors
+    }
+};
+fetchData();
+
+/*const oldLink = document.getElementById('old');
 const newLink = document.getElementById('new');
 const largeLink = document.getElementById('large');
 const smallLink = document.getElementById('small');
@@ -90,4 +109,4 @@ const figureTemple = temples.map((temple) => {
     const listItem = document.createElement("figure");
     listItem.innerHTML = '<figcaption><span class="titlePhoto">' + temple.templeName + '</span><br>LOCATION: ' + temple.location + '<br>DEDICATED: ' + temple.dedicated + '<br>SIZE: ' + temple.area + ' sq ft</figcaption><img src="' + temple.imageUrl + '" alt="' + temple.templeName + '" loading="lazy">';
     listPhotos.appendChild(listItem);
-});
+});*/
