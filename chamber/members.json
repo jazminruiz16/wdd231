@@ -1,0 +1,61 @@
+{
+    "industries": [
+        {
+            "name": "Engineering Solutions SRL",
+            "address": "Km14 doble vía la guardia avenue",
+            "phonenumber": "3 381501",
+            "imageurl": "https://www.miguia.com.bo/wp-content/uploads/2025/01/LOGO-JP-372x228.png",
+            "membershiplevel":2,
+            "information":"Engineering Services"
+        },
+        {
+            "name": "Ingenieria Libre",
+            "address": "778 Lanza Avenue, Cochabamba, Bolivia",
+            "phonenumber": "76906787",
+            "imageurl": "https://www.miguia.com.bo/wp-content/uploads/2024/12/Arte-SFE-2024-2-372x240.png",
+            "membershiplevel": 2,
+            "information": "Hosting"
+        },
+        {
+            "name": "MALDONADO EXPLORACIONES SRL",
+            "address": "1340 Rene Moreno Street, SAN MIGUEL CALACOTO",
+            "phonenumber": "2 2771020",
+            "imageurl": "https://www.miguia.com.bo/wp-content/uploads/2024/12/20230122_083813-372x240.jpg",
+            "membershiplevel": 2,
+            "information": "Consultors"
+        },
+        {
+            "name": "AMERICANTAX CONSULTORES S.R.L.",
+            "address": "677 Loayza Street, La Paz, Bolivia",
+            "phonenumber": "75827127",
+            "imageurl": "https://www.miguia.com.bo/wp-content/uploads/2024/09/istockphoto-1403453245-612x612-1-372x240.jpg",
+            "membershiplevel": 2,
+            "information": "Auditing and Accounting"
+        },
+        {
+            "name": "Consultora de Auditoria Financiera",
+            "address": "1826 20 de Octubre Avenue, La Paz; Bolivia",
+            "phonenumber": "77226227",
+            "imageurl": "https://www.miguia.com.bo/wp-content/uploads/2021/12/placeholder.png",
+            "membershiplevel": 2,
+            "information": "Auditing and Accounting"
+        },
+        {
+            "name": "APART HOTEL ALMUDENA",
+            "address": "1022 Carlos Medinacelli Street, Sopocachi, La Paz, Bolivia",
+            "phonenumber": "+591 (2) 2417949",
+            "imageurl": "https://www.miguia.com.bo/wp-content/uploads/2024/09/288435811-copia-1.jpg",
+            "membershiplevel": 2,
+            "information": "Hotel"
+        },
+        {
+            "name": "Estudio Jurídico Núñez del Prado",
+            "address": "UCB Tower, Santa Cruz, Bolivia",
+            "phonenumber": "3316160",
+            "imageurl": "https://www.miguia.com.bo/wp-content/uploads/2020/05/3F8E9373-633B-494F-BE9A-E5B5485E8AE3-scaled-295x150.jpeg",
+            "membershiplevel": 3,
+            "information": "Legal Services"
+        }
+        
+    ]
+}
