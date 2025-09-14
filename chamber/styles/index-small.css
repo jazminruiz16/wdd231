@@ -9,16 +9,20 @@
     --secondary-color: #28536b;
     --accent1-color: #c2948a;
     --accent2-color: #7ea8be;
-    --accent3-color: #f6f0ed;
-    --accent4-color: #bbb193;
+    --accent3-color: white;
+    --accent4-color: #f6f0ed;
+    ;
 }
 
 body {
     font-family: Lato, sans-serif;
-    font-weight: 200;
+    font-weight:lighter;
+    /*display: flex;
+    flex-direction: column;*/
 
 
 }
+
 
 header {
     padding: 10px;
@@ -30,6 +34,7 @@ header {
     background-color: var(--accent3-color);
     color: var(--primary-color);
     margin-bottom: 15px;
+    border-bottom: 1px solid#28536b;
     font-size: 20px;
 }
 
@@ -72,14 +77,15 @@ a:hover {
 }
 
 #page-title {
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 30px;
     width: 20%;
     text-align: center;
     margin-right: 50px;
 
 }
-#jazminruiz{
+
+#jazminruiz {
     width: 70px;
 }
 
@@ -87,6 +93,8 @@ a:hover {
 h1 {
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
 }
 
 h2 {
@@ -95,7 +103,6 @@ h2 {
     color: var(--accent3-color);
 }
 
-main,
 footer {
     display: flex;
     flex-direction: column;
@@ -108,70 +115,55 @@ footer {
 main {
     color: var(--primary-color);
     background-color: var(--accent3-color);
-    text-align-last: center;
+    
+    align-items: center;
 }
-
-p {
+.menu{
+    text-align: center;
+}
+footer p {
     padding: 20px;
 }
 
-.left-card {
-    border: 1px solid;
-    border-color: var(--accent4-color);
-    margin: 5px 25px 5px 25px;
-}
 
-.rigth-card {
-    border: 1px solid;
-    border-color: var(--accent4-color);
-    margin: 5px 25px 5px 25px;
-}
 
-.bottom-card {
-    border: 1px solid;
-    border-color: var(--accent4-color);
-    margin: 5px 25px 5px 25px;
+.gridclass {
     display: flex;
     flex-direction: column;
-
-}
-
-#certificate {
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
-}
-
-#wdd {
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
-#certificate a,
-#wdd a {
+.listclass {
 
-    height: 50px;
-    padding: 15px;
-    margin: 2px;
-    text-align: center;
-    border: 1px solid;
-    border-color: var(--accent4-color);
-    margin: 5px 25px 5px 25px;
+    font-size: 12px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+
 }
 
-#certificate a {
-    width: 30%;
+.listclass div {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    border-top: 1px solid #7ea8be;
+    height: 30px;
 }
 
-#wdd a {
-    width: 90%;
+.gridclass div {
+    background-color: var(--accent4-color);
+    padding: 20px;
+    margin: 5px;
+    width: 300px;
 }
 
 footer {
     font-family: 'Lato', sans-serif;
-    background-color: var(--accent1-color);
-    color: var(--primary-color);
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
