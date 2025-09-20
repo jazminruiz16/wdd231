@@ -172,7 +172,7 @@ footer p {
 }
 
 .gridclass>figure,
-.gridclass section, aside {
+.gridclass section, aside , .strengths div{
     
     border-right: 3px groove #EDE9E8;
     border-bottom: 3px groove #EDE9E8;
@@ -230,18 +230,22 @@ footer span {
 .bottom-left-card {
     display: flex;
     flex-direction: column;
+    padding: 30px;
 }
 .bottom-left-card h2{
     width: 100%;
 }
 .bottom-left-card div{
     width: 255px;
+    
 }
 aside{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    font-size: 20px;
+    text-align: center;
 }
 
 .dark1 {
@@ -259,4 +263,19 @@ aside{
 }
 .light1 {
     background-color: var(--accent4-color);
+}
+.strengths{
+    text-align: center;
+}
+.strengths div{
+    width: 250px;
+}
+
+.light2{
+    background-color: var(--accent1-color);
+
+}
+.light2 img{
+    background-color: var(--primary-color);
+    
 }
