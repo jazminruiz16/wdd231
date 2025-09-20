@@ -6,17 +6,16 @@
 
 :root {
     --primary-color: black;
-    --secondary-color: #28536b;
-    --accent1-color: #c2948a;
-    --accent2-color: #7ea8be;
+    --secondary-color: #0e1c36;
+    --accent1-color: #d7f9ff;/*#c2948a;*/
+    --accent2-color: #afcbff;
     --accent3-color: white;
-    --accent4-color: #f6f0ed;
-    ;
+    --accent4-color: #f9fbf2;
 }
 
 body {
     font-family: Lato, sans-serif;
-    font-weight:lighter;
+    font-weight: lighter;
     /*display: flex;
     flex-direction: column;*/
 
@@ -34,7 +33,7 @@ header {
     background-color: var(--accent3-color);
     color: var(--primary-color);
     margin-bottom: 15px;
-    border-bottom: 1px solid#28536b;
+    border-bottom: 4px groove #EDE9E8;
     font-size: 20px;
 }
 
@@ -60,8 +59,6 @@ header {
     margin-top: 18px;
 }
 
-
-
 header nav a {
     padding: 5px;
     width: 100%;
@@ -74,6 +71,22 @@ header nav a {
 
 a:hover {
     color: blue;
+    background-color: var(--accent4-color);
+}
+
+.hero {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text {
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+    color: var(--accent3-color);
+    padding-left: 10px;
+
 }
 
 #page-title {
@@ -93,8 +106,12 @@ a:hover {
 h1 {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
+
+}
+.h1small{
+    font-size: 25px;
 }
 
 h2 {
@@ -115,12 +132,14 @@ footer {
 main {
     color: var(--primary-color);
     background-color: var(--accent3-color);
-    
+
     align-items: center;
 }
-.menu{
+
+.menu {
     text-align: center;
 }
+
 footer p {
     padding: 20px;
 }
@@ -152,11 +171,19 @@ footer p {
     height: 30px;
 }
 
-.gridclass div {
-    background-color: var(--accent4-color);
+.gridclass>figure,
+.gridclass section, aside {
+    
+    border-right: 3px groove #EDE9E8;
+    border-bottom: 3px groove #EDE9E8;
+    border-left: 1px solid #EDE9E8;
+    border-top: 1px solid #EDE9E8;
     padding: 20px;
     margin: 5px;
     width: 300px;
+}
+.gridclass>figure{
+    background-color: var(--accent3-color);
 }
 
 footer {
@@ -186,4 +213,50 @@ footer span {
 .social-media {
     text-align: center;
     text-decoration: none;
+}
+
+/*HOME PAGE*/
+.left-card {
+    text-align: center;
+    align-content: center;
+}
+
+.left-card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;/*horizontalmente*/
+}
+.bottom-left-card {
+    display: flex;
+    flex-direction: column;
+}
+.bottom-left-card h2{
+    width: 100%;
+}
+.bottom-left-card div{
+    width: 255px;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dark1 {
+    background-color:var(--secondary-color);
+    color: var(--accent3-color);
+}
+.dark1 div a{
+    background-color: var(--accent4-color);
+    color: var(--primary-color);
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 20px;
+    
+    width: 200px; 
+}
+.light1 {
+    background-color: var(--accent4-color);
 }

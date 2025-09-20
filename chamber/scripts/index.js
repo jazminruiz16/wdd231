@@ -44,6 +44,7 @@ gridLink.addEventListener("click", async function () {
         console.error("Error fetching data:", error); // Handle any errors
     }
     listPhotos.classList.add("gridclass");
+    listPhotos.classList.add("directorygrid");
     listPhotos.classList.remove("listclass");
 });
 listLink.addEventListener("click", async function () {
@@ -63,6 +64,8 @@ listLink.addEventListener("click", async function () {
     }
     listPhotos.classList.add("listclass");
     listPhotos.classList.remove("gridclass");
+    listPhotos.classList.remove("directorygrid");
+
 
 
 });
