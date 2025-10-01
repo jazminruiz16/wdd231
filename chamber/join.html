@@ -56,13 +56,13 @@
                     <input type="text" name="lname" autocomplete="last-name" title="Enter your last name" required>
                 </label>
                 <label>Organizational Title
-                    <input id="otitle" type="text" name="title" autocomplete="organizational-title" title="Enter your title">
+                    <input type="text" name="title" autocomplete="organizational-title" title="Enter your title that only can have alpha characters, hyphens, and spaces with a minimum of seven (7) characters"  pattern="^[A-Za-z\s\-]{7,}$" required>
                 </label>
                 <label>Email *
                     <input type="text" name="email" autocomplete="email" title="Enter your email" required>
                 </label>
                 <label>Cell Phone *
-                    <input type="text" name="phone" autocomplete="cell-phone" title="Enter your cell phone" required>
+                    <input type="text" name="phone" autocomplete="cell-phone" title="Enter your cell phone" pattern="^[\d]+$" required>
                 </label>
                 <label>Business Name *
                     <input type="text" name="business" autocomplete="organization" title="Enter your business name" required>
