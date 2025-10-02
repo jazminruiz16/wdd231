@@ -44,11 +44,10 @@
 
     <main>
         <h1>Bolivian Chamber of Commerce <br>Join Us</h1>
-        <form id="form" method="GET" action="thanks.html">
+        <form id="form" action="thankyou.html" method="GET" >
            <fieldset>
                <legend>Membership Application</legend>
-               <p>Send us a message and we'll respond within 24 hours.</p>
-               
+              
                 <label>First name *
                     <input type="text" name="fname" autocomplete="first-name" title="Enter your first name" required>
                 </label>
@@ -56,29 +55,34 @@
                     <input type="text" name="lname" autocomplete="last-name" title="Enter your last name" required>
                 </label>
                 <label>Organizational Title
-                    <input type="text" name="title" autocomplete="organizational-title" title="Enter your title that only can have alpha characters, hyphens, and spaces with a minimum of seven (7) characters"  pattern="^[A-Za-z\s\-]{7,}$" required>
+                    <input type="text" name="title" autocomplete="organizational-title" title="Enter your title that only can have alpha characters, hyphens, and spaces with a minimum of seven (7) characters"  pattern="^[A-Za-z\s\-]{7,}$">
                 </label>
                 <label>Email *
                     <input type="text" name="email" autocomplete="email" title="Enter your email" required>
                 </label>
                 <label>Cell Phone *
-                    <input type="text" name="phone" autocomplete="cell-phone" title="Enter your cell phone" pattern="^[\d]+$" required>
+                    <input type="text" name="phone" autocomplete="cell-phone" title="Enter your cell phone" required>
                 </label>
                 <label>Business Name *
                     <input type="text" name="business" autocomplete="organization" title="Enter your business name" required>
                 </label>
+        
+                <label>Select a Membership Level *
+                    <select name="membership" required>
+                        <option value="NP" title="NP Membership is for non profit organizations and there is no fee.">NP Membership</option>
+                        <option value="Bronze Membership">Bronze Membership</option>
+                        <option value="Silver Membership">Silver Membership</option>
+                        <option value="Gold Membership">Gold Membership</option>
+                </label>
                 <label>
                     Business Description
-                    <textarea name="message" rows="5"></textarea>
+                    <textarea name="bdescription" rows="5" title="Enter a description of your business"></textarea>
                 </label>
-                <p id="output"></p>
+                <label>Date-time:
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </label>
                 
-
-               <div class="box_longmessage">
-                   <label>Select a Membership Level *</label>
-                   <textarea id="message" name="message" rows= "nameid 1"></textarea> 
-               </div>
-               <button id="button" type="submit">nameid 1</button>
+                <button id="button" type="submit" href="thankyou.html">nameid 1</button>
             </fieldset>
         </form>
         <div class="gridclass homegrid">
@@ -174,7 +178,7 @@
 
     </footer>
     <script src="scripts/index.js" type="module" defer></script>
-    <script src="scripts/forms.js" defer></script>
+    
 </body>
 
 </html>

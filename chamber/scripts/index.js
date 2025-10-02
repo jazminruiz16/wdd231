@@ -87,6 +87,12 @@ const fetchData = async () => {
 };
 fetchData();
 
+const form = document.querySelector("#form");
+form.addEventListener("submit", () => {
+    const date = new Date();
+    document.getElementById("timestamp").value = date;
+});
+
 /*const oldLink = document.getElementById('old');
 const newLink = document.getElementById('new');
 const largeLink = document.getElementById('large');

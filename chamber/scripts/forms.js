@@ -1,17 +1,40 @@
-const otitle = document.querySelector("#otitle");
-const output = document.querySelector("#output");
 const form = document.querySelector("#form");
-const review = /^[A-Za-z\s-]+$/;
-function testInfo(organizationaltitle) {
-    const ok = review.exec(organizationaltitle.value);
-    output.textContent = ok
-        ? `Thanks, your phone number is ${ok[0]}`
-        : `${organizationaltitle.value} only can have alpha characters, hyphens, and spaces with a minimum of seven (7) characters `;
-}
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    testInfo(otitle);
-});
+const filledform = document.getElementById('filledform');
 const params = new URLSearchParams(window.location.search);
 const fname = params.get('fname');
 const lname = params.get('lname');
+const title = params.get('title');
+const email = params.get('email');
+const phone = params.get('phone');
+const business = params.get('business');
+const membership = params.get('membership');
+const bdescription = params.get('bdescription');
+const timestamp = params.get('timestamp');
+
+const listData = document.createElement("div");
+listData.innerHTML = '<p>First name: ' + fname + '</p><p>Last name: ' + lname + '</p><p>Email: ' + email + '</p><p>Mobile number: ' + phone + '</p><p>Business name: ' + business + '</p><p>Current date timestamp: ' + timestamp + '</p>';
+filledform.appendChild(listData);
+listData.classList.add("centerbox");
+
+const button = document.getElementById('menu-button');
+const menu = document.getElementById('menu');
+const header = document.querySelector('header');
+const listPhotos = document.getElementById('listPhotos');
+
+
+button.addEventListener("click", function () {
+    menu.classList.toggle('open');
+    if (button.innerHTML === '☰') {
+        button.textContent = '❌';
+        header.style.height = '300px';
+
+    }
+    else {
+        button.textContent = '☰';
+        header.style.height = '150px';
+
+    }
+
+});
+
+

@@ -279,3 +279,22 @@ aside{
     background-color: var(--primary-color);
     
 }
+
+/*THANK PAGE*/
+.centerbox{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    width: 50%;
+    min-width: 200px;
+    padding: 5%;
+    border-right: 3px groove #EDE9E8;
+    border-bottom: 3px groove #EDE9E8;
+    border-left: 1px solid #EDE9E8;
+    border-top: 1px solid #EDE9E8;
+    background-color: var(--accent2-color);
+}
+#filledform >p{
+    text-align: center;
+    margin-bottom: 5px;
+}
