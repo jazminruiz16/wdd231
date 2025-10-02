@@ -42,9 +42,9 @@
         <button id="menu-button">☰</button>
     </header>
 
-    <main>
-        <h1>Bolivian Chamber of Commerce <br>Join Us</h1>
-        <form id="form" action="thankyou.html" method="GET" >
+    <main class="joingrid">
+        <h1 class="h1small">Bolivian Chamber of Commerce <br>Join Us</h1>
+        <form id="form" action="thankyou.html" method="GET" class="left dark1">
            <fieldset>
                <legend>Membership Application</legend>
               
@@ -73,74 +73,72 @@
                         <option value="Bronze Membership">Bronze Membership</option>
                         <option value="Silver Membership">Silver Membership</option>
                         <option value="Gold Membership">Gold Membership</option>
+                    </select>
                 </label>
                 <label>
                     Business Description
                     <textarea name="bdescription" rows="5" title="Enter a description of your business"></textarea>
                 </label>
-                <label>Date-time:
+                <label>
                     <input type="hidden" name="timestamp" id="timestamp">
                 </label>
-                
-                <button id="button" type="submit" href="thankyou.html">nameid 1</button>
+                <button id="button" type="submit" href="thankyou.html">Get Membership</button>
             </fieldset>
         </form>
-        <div class="gridclass homegrid">
-            <section class="left-card dark1">
-                <h2>Be part of Bolivian Chamber of Commerce</h2>
+        <aside class="light1">
+            <section class="normalcard">
+                <h2>Non Profit Membership</h2>
                 <div>
-                    <p>Because we have business solutions desiged for your needs.</p>
-                    <a href="directory.html">Join Us</a>
+                    <p>Basic benefits for non-profit organizations.</p>
+                    <button id="openmodal1">Learn More</button>
                 </div>
-                
+                <dialog id="myModalnormal" class="modalbox">
+                    <div><h2>Non Profit Membership includes:</h2><button id="closeModal1">❌</button></div>
+                    <p>Presence in the directory. <br>Acess to monthly training.<br>Access to business roundtables</p>
+                </dialog>                
             </section>
-            <section class="bottom-left-card light1">
-                <h2>Current events</h2>
+            <section class="normalcard">
+                <h2>Bronze Membership</h2>
                 <div>
-                    <p>Fintech Summit Bolivia 2025 projects the country toward the digital economy</p>
-                    <a href="https://www.cainco.org.bo/fintech-summit-bolivia-2025-proyecta-al-pais-hacia-la-economia-digital/">
-                        <img src="images/fintech.jpg" alt="fintech" width="250">
-                    </a>
-            
+                    <p>Ideal for small businesses getting started.</p>
+                    <button id="openmodal2">Learn More</button>
                 </div>
-                <div>
-                    <p>The Bolivia International Business Roundtable enters its final stretch toward its 34th edition.</p>
-                    <a
-                        href="https://www.cainco.org.bo/la-rueda-de-negocios-internacional-bolivia-ingresa-en-su-recta-final-rumbo-a-su-34a-version/">
-                        <img src="images/round-table.jpg" alt="round table" width="250">
-                    </a>
-                </div>
-                <div>
-                    <p>Bolivia boosts financial innovation with the Fintech Summit 2025</p>
-                    <a href="https://www.cainco.org.bo/bolivia-impulsa-la-innovacion-financiera-con-el-fintech-summit-2025/">
-                        <img src="images/fintech-finals.jpg" alt="fintech finals" width="250">
-                    </a>
-                </div>
-            </section>
-            <aside class="light2" id="weather"></aside>
-            <section class="bottom-card dark1">
-                <h2>Spotlights</h2>
-                <div class="strengths">
-                    <div>
-                        <h3>1</h3>
-                        <p>Fintech Summit Bolivia: An annual event that promotes financial innovation and projects the country toward the digital economy</p>
-                        
+                <dialog id="myModalbronze" class="modalbox">
+                    <div><h2>Bronze Membership includes:</h2><button id="closeModal2">❌</button></div>
                     
-                    </div>
-                    <div>
-                        <h3>2</h3>
-                        <p>Business Roundtable Bolivia: An initiative that facilitates connections between companies.</p>
-                        
-                    </div>
-                    <div>
-                        <h3>3</h3>
-                        <p>Training and Workshops: We offer training on relevant topics such as sales optimization in adverse economic climates and the use of
-                        AI for entrepreneurship</p>
-                        
-                    </div>
-                </div>
+                    <p>Presence in the directory. <br>Acess to monthly training.<br>Access to business roundtables<br>Event discounts.</p>
+                </dialog>
             </section>
-        </div>
+            <section class="normalcard">
+                <h2>Silver Membership</h2>
+                <div>
+                    <p>Enhanced visibility and networking opportunities.</p>
+                    <button id="openmodal3">Learn More</button>
+                </div>
+                <dialog id="myModalsilver" class="modalbox">
+                    <div><h2>Silver Membership includes:</h2><button id="closeModal3">❌</button></div>
+                    
+                    <p>Presence in the directory. <br>Acess to monthly training.<br>Access to business roundtables<br>Event
+                        discounts.<br>Acess to special events</p>
+                </dialog>
+            </section>
+            <section class="normalcard">
+                <h2>Golden Membership</h2>
+                <div>
+                    <p>Premium benefits and exclusive event access.</p>
+                    <button id="openmodal4">Learn More</button>
+                </div>
+                <dialog id="myModalgolden" class="modalbox">
+                    <div>
+                        <h2>Golden Membership includes:</h2>
+                        <button id="closeModal4">❌</button>
+                    </div>
+                    
+                    <p>Presence in the directory. <br>Acess to monthly training.<br>Access to business roundtables<br>Event
+                        discounts.<br>Acess to special events<br>Spotlight positions on the home page</p>
+                </dialog>
+            </section>
+        </aside>
 
     </main>
     <footer>
@@ -178,6 +176,7 @@
 
     </footer>
     <script src="scripts/index.js" type="module" defer></script>
+    <script src="scripts/modal.js" type="module" defer></script>
     
 </body>
 
