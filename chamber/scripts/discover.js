@@ -22,3 +22,37 @@ function displayItems(places) {
     
 }
 displayItems(places);
+
+const timeBetween = document.querySelector("#visits");
+
+const theDateToday = new Date();
+let lastVisit1 = window.localStorage.getItem("lastVisit-ls");
+let lastVisit = theDateToday;
+if (lastVisit1.includes(20)) {
+    lastVisit = new Date(lastVisit1);
+}
+
+const days = (theDateToday - lastVisit) / 86400000;
+if (days < 1) {
+    timeBetween.textContent = `Welcome! Let us know if you have any questions.`;
+}
+else if (days >= 1 && days < 2) {
+    timeBetween.textContent = `Back so soon! Awesome!`;
+} else {
+    timeBetween.textContent = `You last visited ${Math.round(days)} days ago.`;
+}
+const modal2 = document.querySelector('#myModalbronze');
+const closeModal2 = document.querySelector('#closeModal2');
+modal2.show();
+
+closeModal2.addEventListener('click', () => {
+    modal2.close();
+});
+
+let month = theDateToday.getMonth() + 1;
+lastVisit = `${theDateToday.getFullYear()}-${month}-${theDateToday.getDate()}`;
+localStorage.setItem("lastVisit-ls", lastVisit);
+
+
+
+

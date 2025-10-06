@@ -185,7 +185,41 @@ footer p {
 .gridclass>figure{
     background-color: var(--accent3-color);
 }
+.directorygrid{
+    justify-items: center;
+}
+.directorygrid div{
+    padding: 20px;
+    border-right: 3px groove #EDE9E8;
+    border-bottom: 3px groove #EDE9E8;
+    border-left: 1px solid #EDE9E8;
+    border-top: 1px solid #EDE9E8;
+    width: 360px;
+    height: 700px;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "image"
+    "description"
+    "location"
 
+    ;
+
+}
+.directorygrid div h2{
+    grid-area: name;
+}
+.directorygrid div img{
+    padding: 2px;
+    grid-area: image;
+
+}
+.directorygrid div p{
+    grid-area: description;
+}
+.directorygrid div address{
+    grid-area: location;
+}
 footer {
     font-family: 'Lato', sans-serif;
     width: 100%;
@@ -215,38 +249,7 @@ footer span {
     text-decoration: none;
 }
 
-/*HOME PAGE*/
-.left-card {
-    text-align: center;
-    align-content: center;
-}
 
-.left-card div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;/*horizontalmente*/
-}
-.bottom-left-card {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-}
-.bottom-left-card h2{
-    width: 100%;
-}
-.bottom-left-card div{
-    width: 255px;
-    
-}
-aside{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
-    text-align: center;
-}
 
 .dark1 {
     background-color:var(--secondary-color);
@@ -264,12 +267,7 @@ aside{
 .light1 {
     background-color: var(--accent4-color);
 }
-.strengths{
-    text-align: center;
-}
-.strengths div{
-    width: 250px;
-}
+
 
 .light2{
     background-color: var(--accent1-color);
@@ -279,76 +277,25 @@ aside{
     background-color: var(--primary-color);
     
 }
-/*JOIN PAGE*/
-.joingrid{
-    display: flex;
-    flex-direction: column;
-}
-.modalbox {
-    background-color: white;
-    border: 2px solid burlywood;
-    border-radius: 5px;
-    margin-left: 25%;
-    width: 50%;
-    min-width: 100px;
-    font-size: 15px;
 
-}
-.modalbox h2{
-    font-size: 15px;
-    width: 80%;
-}
-.modalbox div{
-    display: flex;
-    justify-content: space-around;
-}
-.left{
-    width: 80%;
-}
-.left fieldset{
-    display: flex;
-    flex-direction: column;
-}
-.left label{
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-.left fieldset label{
-    display: flex;
-    flex-direction: column;
-}
 #button{
     height: 50px;
 }
-.joingrid aside{
-    width: 80%;
-}
-@keyframes fadeColor {
-    from {
-        background-color: var(--accent2-color);
-    }
+dialog{
+    width: 30%;
+    margin-left: 35%;
+    border-right: 5px groove #0e1c36;
+    border-bottom: 5px groove #0e1c36;
+    border-left: 3px solid #0e1c36;
+    border-top: 3px solid #0e1c36;
 
-    to {
-        background-color: var(--accent1-color);
-    }
 }
-.normalcard{
-    width: 80%;
+dialog p{
     padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-right: 3px groove #EDE9E8;
-    border-bottom: 3px groove #EDE9E8;
-    border-left: 1px solid #EDE9E8;
-    border-top: 1px solid #EDE9E8;
-    border-radius:5%;
-    background-color: var(--accent1-color);
-    animation-name: fadeColor;
-    animation-duration: 7s;
-    animation-iteration-count: 2;
-    animation-delay: 5s;
 }
-
+dialog button{
+    background-color: var(--accent4-color);
+}
 /*THANK PAGE*/
 .centerbox{
     display: flex;

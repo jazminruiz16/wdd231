@@ -69,21 +69,6 @@
 
 
 
-    h1 {
-        grid-row: 1/2;
-        grid-column: 1/4;
-        font-size: 80px;
-    }
-
-    .gridclass {
-        display: grid;
-        
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    
-    
 
     
     footer {
@@ -99,96 +84,25 @@
     }
     /*DIRECTORY PAGE*/
     .directorygrid{
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-    .listclass {
-        font-size: 15px;
-    }
-    /*HOME PAGE*/
-    .gridclass section {
-        width:auto;
-    }
-    .homegrid{
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 300px 1fr 1fr;
-    }
-    .left-card{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        height: 300px;
-        
-    }
-
-    
-    .bottom-left-card{
-        grid-column: 1/2;
-        grid-row: 2/3;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+
+
     }
-    .bottom-left-card h2{
-        grid-column: 1/3;
+    .directorygrid div {
+        padding:10px;
+        width: 320px;
+        height: 520px;
+         
     }
-    aside{
-        grid-column: 2/3;
-        grid-row: 1/3;
-        padding-top: 230px;
-        padding-bottom: 230px;
-        
-    }
-    .bottom-card{
-        grid-column: 1/3;
-        grid-row: 3/4;
-        display: flex;
-        flex-direction: column;
-    }
-    .strengths{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+    .directorygrid div img {
+        padding: 0px;
+        align-content: center;
     
-    /*JOIN PAGE*/
-    .joingrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 1fr;
     }
-    .joingrid h1{
-        grid-column: 1/3;
-        grid-row: 1/2;
-
-    }
-    .left{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        height: 100%;
-        width: 100%;
-        
-        
-    }
-    .left fieldset{
-        height: 90%;
-        margin: 5%;
-    }
-    .joingrid aside{
-        grid-column: 2/3;
-        grid-row: 2/3;
-        padding: 10px;
-        width: 100%;
-    }
-    .normalcard{
-        width: 60%;
-    }
-    .modalbox{
-        margin-left: 35%;
-        width: 30%;
-    }
-    
-
-
-
-    
 
 
 }
