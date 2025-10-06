@@ -28,7 +28,7 @@ const timeBetween = document.querySelector("#visits");
 const theDateToday = new Date();
 let lastVisit1 = window.localStorage.getItem("lastVisit-ls");
 let lastVisit = theDateToday;
-if (lastVisit1.includes(20)) {
+if (lastVisit1 != null) {
     lastVisit = new Date(lastVisit1);
 }
 
