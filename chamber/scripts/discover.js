@@ -33,8 +33,9 @@ const timeBetween = document.querySelector("#visits");
 
 const theDateToday = new Date();
 let lastVisit1 = window.localStorage.getItem("lastVisit-ls");
+lastVisit1 = toString(lastVisit1);
 let lastVisit = theDateToday;
-if (lastVisit1 != null) {
+if (lastVisit1 !== "null") {
     lastVisit = new Date(lastVisit1);
 }
 
