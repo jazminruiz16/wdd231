@@ -35,7 +35,7 @@ const theDateToday = new Date();
 let lastVisit1 = window.localStorage.getItem("lastVisit-ls");
 lastVisit1 = toString(lastVisit1);
 let lastVisit = theDateToday;
-if (lastVisit1 !== "null") {
+if (lastVisit1 != "null" && lastVisit1 != "NaN" && lastVisit1 != "[object Undefined]") {
     lastVisit = new Date(lastVisit1);
 }
 
@@ -46,7 +46,7 @@ if (days < 1) {
 else if (days >= 1 && days < 2) {
     timeBetween.textContent = `Back so soon! Awesome!`;
 } else {
-    timeBetween.textContent = `You last visited ${Math.round(days)} days ago.`;
+    timeBetween.textContent = `You last ${lastVisit1} visited ${Math.round(days)} days ago.`;
 }
 const modal2 = document.querySelector('#myModalbronze');
 const closeModal2 = document.querySelector('#closeModal2');
