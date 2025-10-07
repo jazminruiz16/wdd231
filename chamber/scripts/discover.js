@@ -38,6 +38,9 @@ let lastVisit = theDateToday;
 if (lastVisit1 !== "null" && lastVisit1 !== "NaN" && lastVisit1 !== "[object Undefined]") {
     lastVisit = new Date(lastVisit1);
 }
+else {
+    lastVisit = theDateToday;
+}
 
 const days = (theDateToday - lastVisit) / 86400000;
 if (days < 1) {
