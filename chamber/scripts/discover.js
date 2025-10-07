@@ -30,10 +30,11 @@ function displayItems(places) {
 displayItems(places);
 
 const timeBetween = document.querySelector("#visits");
-
+let verify=document.getElementById("null")
 const theDateToday = new Date();
 let lastVisit1 = window.localStorage.getItem("lastVisit-ls");
 lastVisit1 = toString(lastVisit1);
+verify.textContent = `Your last ${lastVisit1}`;
 let lastVisit = theDateToday;
 if (lastVisit1 !== "null" && lastVisit1 !== "NaN" && lastVisit1 !== "[object Undefined]") {
     lastVisit = new Date(lastVisit1);
