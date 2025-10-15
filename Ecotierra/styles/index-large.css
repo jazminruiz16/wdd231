@@ -140,7 +140,7 @@
         align-items: center;
         padding: 20px;
     }
-    .card2 iframe{
+    .card2 div a img{
         width: 500px;
     }
     aside{
