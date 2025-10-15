@@ -211,12 +211,18 @@ footer span {
 
 .message {
     width: 60%;
-    height: 250px;
+    height: 400px;
     margin-left: 20%;
     text-align: center;
 }
 
 .message h1,
-.message h2 {
+.message h2{
     padding: 20px;
+}
+.message h2{
+    margin-bottom: 20px;
+}
+.message p{
+    font-family: 'Source Code Pro',monospace;
 }

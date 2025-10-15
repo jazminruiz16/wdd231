@@ -1,14 +1,6 @@
-const modal1 = document.querySelector('#myModalnormal');
-const openModal = document.querySelector('#openmodal1');
+const modal1 = document.querySelector('#myModal');
 const closeModal = document.querySelector('#closeModal1');
-modal1.show();
-
-closeModal.addEventListener('click', () => {
-    modal1.close();
-});
-
-
-
+modal1.showModal();
 
 const date2 = new Date();
 const month = date2.getMonth();
@@ -38,3 +30,7 @@ else {
 const listItem = document.createElement("div");
 listItem.innerHTML = `<img src="${imageseason}" alt="image season" width=150 loading = "lazy" > <p>Organic farming is seasonal because it is related to the cycles of nature and the rhythms of the earth. In ${season} we have discount in our seasonal harvest: ${harvest} </p>`;
 modal1.appendChild(listItem);
+
+closeModal.addEventListener('click', () => {
+    modal1.close();
+});
