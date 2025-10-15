@@ -315,3 +315,85 @@ aside {
 .card3 img {
     width: 90%;
 }
+
+
+
+.message h1,
+.message h2 {
+    padding: 20px;
+    /*NEW*/
+}
+
+.strengths p {
+    font-family: 'Source Code Pro', monospace;
+}
+
+/*NEW*/
+
+/*Contact Page*/
+.card2 div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+/*PRODUCT PAGE*/
+.directorygrid>figure {
+
+    border-right: 3px groove #EDE9E8;
+    border-bottom: 3px groove #EDE9E8;
+    border-left: 1px solid #EDE9E8;
+    border-top: 1px solid #EDE9E8;
+    padding: 20px;
+    margin: 5px;
+    width: 300px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.gridclass>figure {
+    background-color: var(--accent3-color);
+}
+
+.directorygrid {
+    justify-items: center;
+}
+
+
+.directorygrid figure img {
+    padding: 2px;
+    width: 250px;
+
+}
+
+.directorygrid figcaption span {
+    font-family: Lato, sans-serif;
+}
+
+.directorygrid figcaption {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+}
+
+.linkBox {
+    width: 120px;
+    height: 50px;
+    margin-left: 70px;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+    border-right: 3px groove #EDE9E8;
+    border-bottom: 3px groove #EDE9E8;
+    border-left: 1px solid #EDE9E8;
+    border-top: 1px solid #EDE9E8;
+    text-decoration: none;
+}
+
+#vegetables {
+    margin-left: 0px;
+}
