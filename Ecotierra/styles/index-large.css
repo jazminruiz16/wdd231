@@ -152,6 +152,24 @@
         flex-direction: row;
         justify-content: space-around;
     }
+    @keyframes grow {
+        from {
+            width: 15px;
+            margin-right: 200px;
+            margin-bottom: -70px;
+        }
+    
+        to {
+            width: 80px;
+            margin-right: 200px;
+            margin-bottom: -25px;
+        }
+    }
+    #calling{
+        width: 15px;
+        margin-right: 200px;
+        margin-bottom: -70px;
+    }
     
     /*JOIN PAGE*/
     .joingrid {

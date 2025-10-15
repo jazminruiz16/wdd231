@@ -312,6 +312,10 @@ aside {
     flex-direction: column;
     
 }
+#button{
+    margin-left: 0px;
+    margin-top: 10px;
+}
 .card3 img {
     width: 90%;
 }
@@ -329,6 +333,35 @@ aside {
 }
 
 /*NEW*/
+.animationbox{
+    position: relative;
+}
+
+@keyframes grow {
+    from {
+        width: 5px;
+        margin-right: 110px;
+        margin-bottom: -25px;
+    }
+
+    to {
+        width: 50px;
+        margin-right: 110px;
+        margin-bottom: 5px;
+    }
+}
+
+#calling {
+    width: 5px;
+    position: absolute;
+    
+    margin-right: 110px;
+    margin-bottom: -25px;
+    animation-name: grow;
+    animation-duration: 7s;
+    animation-iteration-count: 7;
+    animation-delay: 5s;
+}
 
 /*Contact Page*/
 .card2 div {
