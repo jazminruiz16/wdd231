@@ -1,4 +1,4 @@
-@media screen and (min-width:900px) {
+@media screen and (min-width:1150px) {
 
     /*header {
 
@@ -140,6 +140,7 @@
         padding-bottom: 230px;
         height: 100%;
         
+        
     }
     .card1{
         grid-column: 1/2;
@@ -207,9 +208,13 @@
         margin-left: 30%;
         width: 40%;
     }
-    /*PRODUCTS PAGE*/
+    /*CONTACT PAGE*/
 
-    
+    .contactgrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 50px;
+    }
 
 
 
