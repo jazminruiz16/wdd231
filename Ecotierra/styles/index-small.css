@@ -365,13 +365,13 @@ aside {
 
 /*Contact Page*/
 .card2 div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    
     padding: 20px;
 }
-
+.card2 iframe{
+    width: 220px;
+    margin-top: 30px;
+}
 /*PRODUCT PAGE*/
 .modalbox div h2 {
     width: 80%;
