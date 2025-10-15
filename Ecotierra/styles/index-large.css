@@ -98,7 +98,7 @@
     #social-media {
         width: 20%;
     }
-    /*DIRECTORY PAGE*/
+    /*PRODUCTS PAGE*/
     .directorygrid{
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
@@ -189,6 +189,8 @@
         margin-left: 35%;
         width: 30%;
     }
+    /*PRODUCTS PAGE*/
+
     
 
 
