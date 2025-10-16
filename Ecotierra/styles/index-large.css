@@ -224,6 +224,29 @@
         grid-template-columns: 1fr;
         padding: 50px;
     }
+    /*ABOUT PAGE*/
+    .about{
+        font-size: 20px;
+        padding: 20px;
+        margin: 20px;
+    }
+    .aboutcard1 div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        width: 90%;
+    }
+    .aboutcard1 div a img{
+        width: 400px;
+    }
+    .aboutcard2{
+        width: 100%;
+    }
+    .aboutcard2 div div{
+        margin-left: 5%;
+    }
 
 
 
