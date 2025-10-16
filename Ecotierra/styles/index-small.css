@@ -448,7 +448,9 @@ aside {
     border-top: 1px solid #EDE9E8;
     text-decoration: none;
 }
-
+.bigfont{
+    font-size: 20px;
+}
 #vegetables {
     margin-left: 0px;
 }

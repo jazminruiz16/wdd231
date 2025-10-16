@@ -10,7 +10,7 @@ let harvest = "";
 if (month >= 8 && month < 11) {
     season = "Spring";
     imageseason = "images/flower.svg";
-    harvest = "sproud salads, beans, lettuces, spinach";
+    harvest = "sproud salad, beans, lettuce, spinach";
 }
 else if (month == 11 || (month >= 0 && month < 2)) {
     season = "Summer";
@@ -28,7 +28,7 @@ else {
     harvest = "chinesse chard, dried fruits";
 }
 const listItem = document.createElement("div");
-listItem.innerHTML = `<img src="${imageseason}" alt="image season" width=150 loading = "lazy" > <p>Organic farming is seasonal because it is related to the cycles of nature and the rhythms of the earth. In ${season} we have discount in our seasonal harvest: ${harvest} </p>`;
+listItem.innerHTML = `<img src="${imageseason}" alt="image season" width=150 loading = "lazy" > <p>Organic farming is seasonal because it is related to the cycles of nature and the rhythms of the earth. In <span class="bigfont">${season}</span> we have discount in our seasonal harvest: <span class="bigfont">${harvest}</span>. </p>`;
 modal1.appendChild(listItem);
 
 closeModal.addEventListener('click', () => {
