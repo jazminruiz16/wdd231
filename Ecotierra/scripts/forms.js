@@ -3,16 +3,13 @@ const filledform = document.getElementById('filledform');
 const params = new URLSearchParams(window.location.search);
 const fname = params.get('fname');
 const lname = params.get('lname');
-const title = params.get('title');
 const email = params.get('email');
 const phone = params.get('phone');
-const business = params.get('business');
-const membership = params.get('membership');
-const bdescription = params.get('bdescription');
-const timestamp = params.get('timestamp');
+const question = params.get('question');
+
 
 const listData = document.createElement("div");
-listData.innerHTML = '<p>First name: ' + fname + '</p><p>Last name: ' + lname + '</p><p>Email: ' + email + '</p><p>Mobile number: ' + phone + '</p><p>Business name: ' + business + '</p><p>Current date timestamp: ' + timestamp + '</p>';
+listData.innerHTML = `<p>First name: ${fname}</p><p>Last name: ${lname}</p><p>Email: ${email}</p><p>Mobile number: ${phone}</p>`;
 filledform.appendChild(listData);
 listData.classList.add("centerbox");
 
