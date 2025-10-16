@@ -80,6 +80,7 @@ a:hover {
     position: relative;
     z-index: 1;
     opacity: 70%;
+    margin-bottom: 20px;
 }
 
 .hero-text {
@@ -382,9 +383,7 @@ aside {
     width: 80%;
     display: flex;
     flex-direction: column;
-    position: relative;
-    
-    
+    position: relative;   
 }
 .modalbox div{
     text-align: center;
