@@ -377,7 +377,7 @@ aside {
     width: 80%;
     text-align: left;
 }
-.modalbox {
+:modal {
     margin: 10%;
     width: 80%;
     display: flex;
